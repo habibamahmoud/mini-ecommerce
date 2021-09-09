@@ -1,0 +1,91 @@
+.carouselImage {
+    height: 60%;
+    margin: auto;
+    object-fit: cover;
+  }
+  
+  .carouselImageWrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    flex-basis: 100%;
+  }
+  
+  .carouselWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+  }
+  
+  .buttonsWrapper {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .navigateButton {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    box-shadow: rgba(208, 210, 211, 0.2) 0px 4px 24px;
+    display: flex;
+  }
+  
+  .navigateButtonIcon {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+  }
+  
+  .imageSelectorWrapper {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  
+  .imageSelectorButton {
+    width: 1.5rem;
+    height: 0.2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 1.5rem;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .text {
+      margin-top: 300px;
+      margin-left: 50px;
+      font-weight: bold;
+      font-size: large;
+  }
+  button {
+      width: 70px;
+      height: 40px;
+      margin-top: 350px;
+      margin: 0px;
+  }
+  .button-txt {
+      font-weight: bold;
+  }
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+  
