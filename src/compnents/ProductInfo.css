@@ -1,0 +1,23 @@
+.card 
+{
+   margin-top: 5%;
+   margin-left: 5%;
+  padding-right: 10%;
+}
+.card-body
+{
+margin: 6%;
+}
+
+.leftSide
+{
+   background-color: blue;
+}
+.col-md-10
+{
+   width: 100%;
+}
+.col-md-2
+{
+   margin-left: 110%;
+}
