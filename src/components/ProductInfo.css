@@ -11,7 +11,7 @@ margin: 6%;
 
 .leftSide
 {
-   background-color: blue;
+   backgroundColor: #B1D5D9;
 }
 .col-md-10
 {
@@ -20,4 +20,8 @@ margin: 6%;
 .col-md-2
 {
    margin-left: 110%;
+}
+
+.card-img{
+   margin-bottom: 50%;
 }

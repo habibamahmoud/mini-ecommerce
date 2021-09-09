@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import chairImage from "../images/whiteChair.jpeg";
+
 import infoPhoto from "../images/infoPhoto.png";
 import facebook from "../images/facebook.png";
 import twitter from "../images/twitter.png";
@@ -10,18 +10,18 @@ import Description from "./Description";
 import InfoHeader from "./InfoHeader";
 import Divider from "./Divider";
 import IntroText from './IntroText';
+import ImageComponent from './ImageComponent';
 
 const ProductInfo = () => {
   const [title, setTitle] = useState("");
   return (
     <div className="card">
       <div className="row ">
-        <div className="col-md-7">
-          <div className="leftSide">
-            {/* <img src={chairImage} className="card-img" alt="..." /> */}
-          </div>
+        <div className="col-md-8">
+          <ImageComponent/>
+          
         </div>
-        <div class="col-md-5">
+        <div class="col-md-4">
           <div className="card-body">
             <Header TitleName={"Intro"} />
             <IntroText
@@ -73,13 +73,13 @@ const ProductInfo = () => {
               </div> */}
               <div class="col-md-2">
                 <div className="row ">
-                  <div class="col-md-7">
+                  <div class="col-md-10">
                     <img src={facebook} className="card-img" alt="..." />
                   </div>
-                  <div class="col-md-7">
+                  <div class="col-md-10">
                     <img src={twitter} className="card-img" alt="..." />
                   </div>
-                  <div class="col-md-7">
+                  <div class="col-md-10">
                     <img src={pintrist} className="card-img" alt="..." />
                   </div>
                 </div>
