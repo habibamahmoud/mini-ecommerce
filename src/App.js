@@ -1,17 +1,24 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import ProductInfo from './components/ProductInfo';
-import Carousel from './components/Carousel.js'
 import NavBar from './components/NavBar';
+import Home from './components/Home';
+import { Route, Switch } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'/>
+
 
 function App() {
   return (
-   <>
-  <NavBar />
-  <Carousel />
-   <ProductInfo/>
-   </>
+    <BrowserRouter className="App">
+
+    <NavBar />
+    <Switch>
+      <Route path="/" component={Home}/>
+      <Route path="/ProductInfo" component={ProductInfo}/>
+    </Switch>
+  </BrowserRouter>
+
   );
 }
 
