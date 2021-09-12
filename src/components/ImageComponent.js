@@ -1,6 +1,6 @@
 import "./ImageComponent.css";
 import chairImage from "../images/chair1.png";
-const ImageComponent = () => {
+const ImageComponent = ( props) => {
   return (
     <div style={{ backgroundColor: "#B1D5D9" }}>
       <nav>
@@ -19,8 +19,8 @@ const ImageComponent = () => {
         <div>
           <div class="p-5">
             <p>Dining Chair</p>
-            <h1>Leifrane</h1>
-            <p>$180</p>
+            <h1>{props.details.name}</h1>
+            <p>${props.details.price}</p>
           </div>
         </div>
 

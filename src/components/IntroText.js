@@ -1,9 +1,9 @@
 import './Header.css'
-const IntroText =({DescText})=>{
+const IntroText =(props)=>{
 return(
   
 
-    <p className="card-text-intro" ><small className="text-muted" >{DescText}</small></p>
+    <p className="card-text-intro" ><small className="text-muted" >{props.DescText}</small></p>
 )
 }
 export default IntroText

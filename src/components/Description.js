@@ -1,9 +1,9 @@
 import './Description.css'
-const Description =({DescText})=>{
+const Description =(props)=>{
     
 return(
   
-    <p className="card-text" ><small className="text-muted" >{DescText}</small></p>
+    <p className="card-text" ><small className="text-muted" >{props.DescText}</small></p>
    
 )
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 import infoPhoto from "../images/infoPhoto.png";
 import facebook from "../images/facebook.png";
@@ -11,23 +11,29 @@ import InfoHeader from "./InfoHeader";
 import Divider from "./Divider";
 import IntroText from './IntroText';
 import ImageComponent from './ImageComponent';
+import axios from "axios";
 
 const ProductInfo = () => {
-  const [title, setTitle] = useState("");
+  
+  const [product, setProduct] = useState(null);
+  useEffect(()=>{
+    axios.get('https://mini-ecommerce.silicon-arena.com/api/products/1').then(response=>setProduct(response.data))
+  })
   return (
+    product ? 
     <div className="card">
+      
       <div className="row ">
         <div className="col-md-8">
-          <ImageComponent/>
-          
+          <ImageComponent details={product}/>
+          {console.log(product)}
         </div>
         <div class="col-md-4">
           <div className="card-body">
             <Header TitleName={"Intro"} />
             <IntroText
               DescText={
-                "Simple,timless desgin that still going stronng after 40 years in our stores," +
-                " It's loved by all edges so we made a grown-up size and a children's size."
+                product.description
               }
             />
             <Header TitleName={"Product Information"} />
@@ -47,9 +53,8 @@ const ProductInfo = () => {
                 <InfoHeader HeaderText={"Materials"} />
               </div>
               <div class="col-md-6">
-                <Description DescText={"Polyproplyene plastic"} />
-                <Description DescText={" Aluminuim Solid birch"} />
-                <Description DescText={"Solid birch"} />
+                <Description DescText={product.material} />
+               
               </div>
             </div>
 
@@ -61,7 +66,7 @@ const ProductInfo = () => {
               </div>
               <div class="col-md-6">
                 <Description
-                  DescText={"Wipe clean with cloth demended in a mild cleaner"}
+                  DescText={product.good_to_know}
                 />
               </div>
             </div>
@@ -89,6 +94,7 @@ const ProductInfo = () => {
         </div>
       </div>
     </div>
+    : <div></div>
   );
 };
 export default ProductInfo;
