@@ -25,3 +25,17 @@ margin: 6%;
 .card-img{
    margin-bottom: 50%;
 }
+
+.social{
+   position: sticky;
+   top: 0;
+   right: 0;
+   
+}
+.socail i
+{
+  font-size: 35px;
+  display: block;
+
+  
+}
