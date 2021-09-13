@@ -28,6 +28,7 @@ const ProductInfo = () => {
           <ImageComponent details={product}/>
           {console.log(product)}
         </div>
+        
         <div class="col-md-4">
           <div className="card-body">
             <Header TitleName={"Intro"} />
@@ -72,24 +73,14 @@ const ProductInfo = () => {
             </div>
             <Divider />
 
-            <div className="row ">
-              {/* <div class="col-md-10">
-                <img src={infoPhoto} className="card-img" alt="..." />
-              </div> */}
-              <div class="col-md-2">
-                <div className="row ">
-                  <div class="col-md-10">
-                    <img src={facebook} className="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-10">
-                    <img src={twitter} className="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-10">
-                    <img src={pintrist} className="card-img" alt="..." />
-                  </div>
-                </div>
+          
+              <div className="col-md-2 socail">
+                  <i className="fab fa-facebook-square" ></i>
+                  <i className="fab fa-twitter-square"></i>
+                  <i class="fab fa-pinterest"></i>
+                
               </div>
-            </div>
+           
           </div>
         </div>
       </div>

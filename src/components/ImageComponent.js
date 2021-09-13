@@ -1,35 +1,36 @@
 import "./ImageComponent.css";
 import chairImage from "../images/chair1.png";
-const ImageComponent = ( props) => {
+const ImageComponent = (props) => {
   return (
     <div style={{ backgroundColor: "#B1D5D9" }}>
       <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            Home
-          </li>
-          <li class="breadcrumb-item">
-           Collection 
-          </li>
-          <li class="breadcrumb-item active">Leifrane</li>
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">Home</li>
+          <li className="breadcrumb-item">Collection</li>
+          <li className="breadcrumb-item active">Leifrane</li>
         </ol>
       </nav>
-      <img className="ImageStyle" src={chairImage} />
-      <div class="d-flex justify-content-around align-items-center">
+      <div className="text-center">
+        <img className="ImageStyle" className="img-fluid" src={chairImage} />
+      </div>
+      <div className="d-flex justify-content-around align-items-center">
         <div>
-          <div class="p-5">
+          <div className="p-5">
             <p>Dining Chair</p>
             <h1>{props.details.name}</h1>
             <p>${props.details.price}</p>
           </div>
         </div>
 
-        <div class="p-5">
-          <button className="btn btn-light" className="rounded-pill">
-            {" "}
-            <p className="button-txt">Buy</p>
-          </button>
+        <div className="p-5">
+          <div className="button-container" className="col-md-8 col-sm-10">
+            <button className="btn btn-light" className="rounded-pill">
+              {" "}
+              <p className="button-txt">Buy</p>
+            </button>
+          </div>
         </div>
+        
       </div>
     </div>
   );
