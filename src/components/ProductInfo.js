@@ -13,15 +13,21 @@ import IntroText from './IntroText';
 import ImageComponent from './ImageComponent';
 import axios from "axios";
 
-const ProductInfo = () => {
+
+
+const ProductInfo = (props) => {
   
   const [product, setProduct] = useState(null);
   useEffect(()=>{
-    axios.get('https://mini-ecommerce.silicon-arena.com/api/products/1').then(response=>setProduct(response.data))
+    axios.get(`https://mini-ecommerce.silicon-arena.com/api/products/${props.match.params.id}`).then(response=>setProduct(response.data))
   })
+
+ 
   return (
+   
     product ? 
     <div className="card">
+      
       
       <div className="row ">
         <div className="col-md-8">
@@ -93,8 +99,10 @@ const ProductInfo = () => {
           </div>
         </div>
       </div>
+      {console.log('welcome')}
     </div>
-    : <div></div>
+    : <div> </div>
+
   );
 };
 export default ProductInfo;

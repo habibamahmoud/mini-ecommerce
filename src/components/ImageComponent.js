@@ -2,7 +2,7 @@ import "./ImageComponent.css";
 import chairImage from "../images/chair1.png";
 const ImageComponent = ( props) => {
   return (
-    <div style={{ backgroundColor: "#B1D5D9" }}>
+    <div style={{ "backgroundColor": props.details.images[0].background_color }}>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -14,7 +14,7 @@ const ImageComponent = ( props) => {
           <li class="breadcrumb-item active">Leifrane</li>
         </ol>
       </nav>
-      <img className="ImageStyle" src={chairImage} />
+      <img className="ImageStyle" src={props.details.images[0].img} />
       <div class="d-flex justify-content-around align-items-center">
         <div>
           <div class="p-5">

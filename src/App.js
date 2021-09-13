@@ -15,7 +15,10 @@ function App() {
     <NavBar />
     <Switch>
       <Route exact path="/" component={Home}/>
-      <Route exact path="/ProductInfo" component={ProductInfo}/>
+      {/* <Route exact path="/ProductInfo" component={ProductInfo}/> */}
+      
+      <Route exact path='/ProductInfo/:id' component={ProductInfo}/> 
+
     </Switch>
   </BrowserRouter>
 

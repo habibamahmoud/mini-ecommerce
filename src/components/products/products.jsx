@@ -39,12 +39,20 @@ export default class products extends Component {
                                 return (
                                     <div key={index} className="item" style={{
                                         "grid-column": `span ${value.width}`,
-                                        "grid-row": `span ${value.height}`,
-                                        "background":"blue"
-                                    }}>
-                                        <p>{value.name}</p>
-                                        <img src={"https://www.pngall.com/wp-content/uploads/2016/06/Furniture-Download-PNG.png"}></img>
-                                        <Link className="more_info" to="/ProductInfo">More Info <i class="fas fa-long-arrow-alt-right"></i></Link>
+                                        "grid-row": `span ${value.height}`                                    }}>
+                                    <p>{value.name}</p>
+                                     {value.images.map((value2,index)=>{
+                                         return(
+                                            <img src={value2.img } style={{
+                                                "backgroundColor":`${value2.background_color}`
+                                            }}/>
+                                         )
+                                          
+                                     })}
+                                        
+
+                                        <Link className="more_info font-weight-bold" to={"/ProductInfo/" + `${value.id}`}><span className="bg-white d-inline-block rounded-circle p-2 py-3 ">More</span> Info <i class="fas fa-long-arrow-alt-right"></i></Link>
+
                                     </div>
 
                                 )
