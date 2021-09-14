@@ -30,7 +30,17 @@ export default class Product_details extends Component {
                                      })}
                                         
 
-                                        <Link className="more_info font-weight-bold" to={"/ProductInfo/" + `${this.props.product.id}`}><span className="bg-span d-inline-block rounded-circle p-2 py-3 ">More</span> Info <i class="fas fa-long-arrow-alt-right"></i></Link>
+                                        <Link className=" font-weight-bold" to={"/ProductInfo/" + `${this.props.product.id}`}>
+                                            <div className='d-flex p-reative justify-content-center'>
+                                                
+                                                <p className="roundedd d-inline-block p-absolute"></p>
+                                                <p className='shifted p-absolute'>More info <i class="fas fa-long-arrow-alt-right"></i></p>
+                                                
+
+                                                
+                                            </div>
+                                            
+                                        </Link>
 
                                     </div>
  
@@ -38,3 +48,4 @@ export default class Product_details extends Component {
         )
     }
 }
+

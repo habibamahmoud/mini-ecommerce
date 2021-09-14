@@ -52,7 +52,7 @@
   } 
   }
 
-.grid-container a{
+.grid-container a {
       display: block;
       padding: 5px;
       text-align: center;
@@ -78,3 +78,25 @@
   background-color: rgba(240, 240, 240);
 }
 
+
+.roundedd {
+  width:60px;
+  height:60px;
+  background: white;
+  border-radius:50%;
+  
+  
+  margin: 0;
+  padding: 0;
+}
+
+.shifted{
+  
+  
+ 
+  font-size: large !important;
+  margin:  20px 0 0 -25px !important;
+ 
+  padding: 0;
+ 
+}

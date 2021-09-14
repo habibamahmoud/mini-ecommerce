@@ -1,7 +1,7 @@
 const InfoHeader =({HeaderText})=>{
 return(
   
-    <h5 className="headerTextStyle">{HeaderText}</h5>
+    <h5 className="">{HeaderText}</h5>
    
 )
 }
