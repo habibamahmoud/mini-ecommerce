@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './style.css';
-import { Link, link } from "react-router-dom"
 import axios from 'axios'
+import Product_details from './Product_details';
 
 
 
@@ -31,30 +31,13 @@ export default class products extends Component {
 
                 {this.state.isReady ?
                     <div className="products_container">
-                        <p> address</p>
+                        <p className="pt-5 text-weight-light"> <span className="text-secondary">Best</span> Seller</p>
 
                         <div className="grid-container" >
                             {this.state.products.map((value, index) => {
                              
                                 return (
-                                    <div key={index} className="item" style={{
-                                        "grid-column": `span ${value.width}`,
-                                        "grid-row": `span ${value.height}`                                    }}>
-                                    <p>{value.name}</p>
-                                     {value.images.map((value2,index)=>{
-                                         return(
-                                            <img src={value2.img } style={{
-                                                "backgroundColor":`${value2.background_color}`
-                                            }}/>
-                                         )
-                                          
-                                     })}
-                                        
-
-                                        <Link className="more_info font-weight-bold" to={"/ProductInfo/" + `${value.id}`}><span className="bg-white d-inline-block rounded-circle p-2 py-3 ">More</span> Info <i class="fas fa-long-arrow-alt-right"></i></Link>
-
-                                    </div>
-
+                                  <Product_details product={value} key={index}/>
                                 )
 
                             })}

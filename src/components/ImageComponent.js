@@ -11,28 +11,24 @@ const ImageComponent = (props) => {
         </ol>
       </nav>
       <div className="text-center">
-        <img className="ImageStyle" className="img-fluid" src={chairImage} />
+        <img className="ImageStyle" className="img-fluid" src={props.details.images[0].img} />
       </div>
-      <div className="d-flex justify-content-around align-items-center">
-        <div>
-          <div className="p-5">
+      <div className="d-flex justify-content-around ">
+          <div className="w-50 px-5">
             <p>Dining Chair</p>
             <h1>{props.details.name}</h1>
             <p>${props.details.price}</p>
           </div>
-        </div>
+        
 
-        <div className="p-5">
-          <div className="button-container" className="col-md-8 col-sm-10">
-            <button className="btn btn-light" className="rounded-pill">
-              {" "}
-              <p className="button-txt">Buy</p>
+        <div className="w-25 pr-5 mt-5">
+            <button className="btn btn-light rounded-pill w-100">
+              Buy
             </button>
-          </div>
+        </div>
         </div>
         
       </div>
-    </div>
   );
 };
 export default ImageComponent;

@@ -24,6 +24,17 @@
       max-width: 80%;
       margin: 50px 140px;
     }
+
+    .grid-container .name_info p{
+      text-align: left;
+      margin-left:10%;
+  }
+  
+  .grid-container .name_info a{
+      text-align: right;
+      margin-right:10%;
+  }
+
   }
 @media only screen and (max-width: 600px) {
     .grid-container {
@@ -33,6 +44,12 @@
     .grid-container div {
       width: 100%;
     }
+
+    .grid-container .item img{
+      width: 292px;
+      height: 292px ;
+      margin: auto;
+  } 
   }
 
 .grid-container a{
@@ -51,54 +68,13 @@
     padding: 20px;
 }
 
-
-.grid-container .item img{
-    width: 292px;
-    height: 292px ;
-    margin: auto;
-}
 .grid-container .item p{
-   text-align: center;
-   line-height: 33px;
-   font-size: 28px;
-   color: black;
-   font-weight: bolder;
-
-}
-
-.grid-container .name_info p{
-    text-align: left;
-    margin-left:10%;
-}
-
-.grid-container .name_info a{
-    text-align: right;
-    margin-right:10%;
+  font-weight: bolder;
+  font-size: 28px;
 }
 
 
-
-
-
-/* delete */
-
-.grid-container > div{
-    padding: 20px;
+.bg-span{
+  background-color: rgba(240, 240, 240);
 }
-
-  .grid-container > div img {
-    width: 292px;
-    height: 292px ;
-    margin: auto auto;
-    
-  }
-
-  .grid-container > div p{
-
-    line-height: 33px;
-    font-size: 28px;
-    color: black;
-    font-weight: bolder;
-
-  }
 

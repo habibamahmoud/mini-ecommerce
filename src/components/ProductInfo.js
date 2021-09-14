@@ -45,7 +45,7 @@ const ProductInfo = (props) => {
             />
             <Header TitleName={"Product Information"} />
             <div className="row ">
-              <div class="col-md-3">
+              <div class="col-md-6">
                 <InfoHeader HeaderText={"Dimesion"} />
               </div>
               <div class="col-md-6">
@@ -56,7 +56,7 @@ const ProductInfo = (props) => {
             <Divider />
 
             <div className="row ">
-              <div class="col-md-3">
+              <div class="col-md-6">
                 <InfoHeader HeaderText={"Materials"} />
               </div>
               <div class="col-md-6">
@@ -68,7 +68,7 @@ const ProductInfo = (props) => {
             <Divider />
 
             <div className="row ">
-              <div class="col-md-3">
+              <div class="col-md-6">
                 <InfoHeader HeaderText={"Good to know"} />
               </div>
               <div class="col-md-6">

@@ -1,4 +1,3 @@
-import './InfoHeader.css'
 const InfoHeader =({HeaderText})=>{
 return(
   
